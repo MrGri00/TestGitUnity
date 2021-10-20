@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//Se ha modificado el código para que sólo se pueda acceder al modo debug desde el editor de Unity
 #if __DEBUG_AVALIABLE__
 
 using UnityEditor;
@@ -25,6 +26,7 @@ public class Enemy : MonoBehaviour
     private void OnDrawGizmos()
     {
 
+        //Se ha modificado el código para que sólo se pueda acceder al modo debug desde el editor de Unity
 #if __DEBUG_AVALIABLE__
         if (Switches.debugMode && Switches.debugShowIds)
         {

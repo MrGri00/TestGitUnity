@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
+//Se ha modificado el código para que sólo se pueda acceder al modo debug desde el editor de Unity
 #if __DEBUG_AVALIABLE__
 
 using UnityEditor;
@@ -41,6 +42,7 @@ public class GameManager : MonoBehaviour
         dialogTextC = dialogText.GetComponent<TextMeshPro>();
     }
 
+    //Se ha modificado el código para que sólo se pueda acceder al modo debug desde el editor de Unity
 #if __DEBUG_AVALIABLE__
     private void OnDrawGizmos()
     {
@@ -58,6 +60,7 @@ public class GameManager : MonoBehaviour
     void Update()
     {
 
+        //Se ha modificado el código para que sólo se pueda acceder al modo debug desde el editor de Unity
 #if __DEBUG_AVALIABLE__
         if (Switches.debugMode && Switches.debugDialogs)
         {
@@ -97,6 +100,7 @@ public class GameManager : MonoBehaviour
             for (int j = 0; j < dialogCharacters.Length; j++) { dialogCharacters[j].gameObject.SetActive(false); }
         }
 
+        //Se ha modificado el código para que sólo se pueda acceder al modo debug desde el editor de Unity
 #if __DEBUG_AVALIABLE__
         if (!Switches.debugMode)
         {

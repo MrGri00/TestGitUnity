@@ -18,11 +18,6 @@ public class Minimap : MonoBehaviour
 
     public Vector3 cameraOffset;
 
-    void Start()
-    {
-        
-    }
-
     void Update()
     {
         Vector3 playerW = player.position;

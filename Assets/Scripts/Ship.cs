@@ -60,6 +60,7 @@ public class Ship : MonoBehaviour
         Vector3 p = (gameCamera.TransformPoint(relativePosition));
         rb.MovePosition(p);
 
+        //Se ha modificado el código para que sólo se pueda acceder al modo debug desde el editor de Unity
 #if __DEBUG_AVALIABLE__
         if (Switches.debugMode && Switches.debugTurboMode)
         {
